@@ -19,7 +19,7 @@ const Topbar = ({ sharedData }) => {
 
          <div style={styles.profileContainer}>
           <img
-            src={"/images/myProfile.png"}
+            src={"images/myProfile.png"}
             alt="Profile"
             style={styles.profileImage}
           />
