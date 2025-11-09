@@ -7,6 +7,8 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import CustomCursor from "./components/CustomCursor";
+import Topbar from "./components/Topbar";
 
 class App extends Component {
 
@@ -79,9 +81,24 @@ class App extends Component {
     });
   }
 
+
+
   render() {
+
+    const { sharedData } = this.state;
+
+    // Vérifie si sharedData.basic_info existe
+    const basicInfo = sharedData.basic_info || {
+      name: "",
+      image: "/images/myProfile.webp", // fallback si JSON pas encore chargé
+    };
+
     return (
       <div>
+        <CustomCursor />
+        
+        <Topbar sharedData={basicInfo} />
+        
         <Header sharedData={this.state.sharedData.basic_info} />
         <div className="col-md-12 mx-auto text-center language">
           <div
@@ -111,7 +128,7 @@ class App extends Component {
           >
             <span
               className="iconify language-icon"
-              data-icon="twemoji-flag-for-flag-poland"
+              data-icon="twemoji:flag-for-flag-france"
               data-inline="false"
               id={window.$secondaryLanguageIconId}
             ></span>

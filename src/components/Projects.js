@@ -34,11 +34,12 @@ class Projects extends Component {
                     height="230"
                     style={{marginBottom: 0, paddingBottom: 0, position: 'relative'}}
                   />
-                  <span className="project-date">{projects.startDate}</span>
+             
                   <br />
                   <p className="project-title-settings mt-3">
                     {projects.title}
                   </p>
+                       <span className="project-date">{projects.startDate}</span>
                 </div>
               </div>
             </span>

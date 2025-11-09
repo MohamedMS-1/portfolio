@@ -1,7 +1,7 @@
 {
     "basic_info": {
       "description_header": "Hi",
-      "description": "👋 I'm Davina Griss. Fictional person for preview purposes :) I'm working with newest front-end frameworks like Angular, React and Vue. What you are seeing now is portfolio template from Dorota1997. If you like this portfolio template, make sure to ⭐ the repository to make it more recognizable for other users. Thank you 💜",
+      "description": "👋 I am a passionate and experienced full-stack developer specialized in Spring Boot, Angular, and mobile development technologies. With a strong background in computer science and a passion for creating high-performance, user-friendly web and mobile solutions, I have gained significant experience in developing modern, scalable web applications and cross-platform mobile applications.",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
@@ -11,12 +11,12 @@
     },
     "projects": [
       {
-        "title": "Animal Shelter",
-        "startDate": "2020",
-        "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
+        "title": "Jaytrain",
+        "startDate": "Web application",
+        "description": "Design and development of a web and mobile application dedicated to sports tracking, allowing users to participate in training sessions, monitor their physical and nutritional progress, and interact through a social platform.",
         "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
-          "images/portfolio/animal-shelter/p2.jpg"
+          "images/portfolio/animal-shelter/p1.webp",
+          "images/portfolio/animal-shelter/p2.webp"
         ],
         "url": "",
         "technologies": [
@@ -35,12 +35,12 @@
         ]
       },
       {
-        "title": "Photography",
-        "startDate": "2018",
-        "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
+        "title": "Impérial",
+        "startDate": "Web application",
+        "description": "Design and development of a highly available, secure, and intuitive online lottery web application, offering an interactive experience for participating in draws.",
         "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
+          "images/portfolio/photography/p1.webp",
+          "images/portfolio/photography/p2.webp"
         ],
         "url": "https://github.com",
         "technologies": [
@@ -55,12 +55,12 @@
         ]
       },
       {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
-        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
+        "title": "Patient",
+        "startDate": "Mobile application",
+        "description": "Design and development of an innovative mobile application dedicated to managing both human and animal healthcare. The app enables patients to conveniently order medications online, schedule appointments with healthcare professionals by specialty, and manage their medical follow-ups. It also includes a veterinary module allowing users to book appointments for their pets, providing a complete and centralized experience for the well-being of the whole family.",
         "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
+          "images/portfolio/adventure/p1.webp",
+          "images/portfolio/adventure/p2.webp"
         ],
         "url": "https://github.com",
         "technologies": [

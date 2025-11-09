@@ -19,14 +19,25 @@
     "skills": {
       "icons": [
         {
-          "name": "HTML 5",
-          "class": "devicon-html5-plain",
-          "level": "95"
+          "name": "Spring Boot",
+          "class": "devicon-spring-plain",
+          "level": "75"
+        },
+
+        {
+          "name": "Python",
+          "class": "devicon-python-plain",
+          "level": "85"
         },
         {
-          "name": "CSS 3",
-          "class": "devicon-css3-plain",
-          "level": "95"
+        "name": "Symfony",
+        "class": "devicon-symfony-original",
+        "level": "70"
+        },
+        {
+          "name": "React Native",
+          "class": "devicon-react-original",
+          "level": "80"
         },
         {
           "name": "Angular",
@@ -63,6 +74,7 @@
           "class": "devicon-mysql-plain",
           "level": "60"
         }
+     
       ]
     }
   }

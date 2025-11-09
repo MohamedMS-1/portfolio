@@ -1,22 +1,23 @@
 {
     "basic_info": {
-      "description_header": "Cześć",
-      "description": "👋 Jestem Davina Griss. Fikcyjna osoba na potrzeby demonstracji. Pracuję z najnowszymi frameworkami front-end takimi jak Angular, React i Vue. To co teraz widzisz to szablon portfolio od Dorota1997. Jeżeli podoba Ci się ten szablon portfolio nie zapomnij o ⭐, żeby było bardziej rozpoznawalne dla innych użytkowników. Dzięki 💜",
+      "description_header": "Bonjour",
+      "description": "👋 Je suis un développeur full-stack passionné et expérimenté, spécialisé dans les technologies Spring Boot, Angular et le développement mobile. Fort d'une solide formation en informatique et d'une passion pour la création de solutions web et mobiles performantes et conviviales, j'ai acquis une expérience significative dans le développement d'applications web modernes et évolutives, ainsi que d'applications mobiles cross-platform.",
       "section_name": {
-        "about": "O mnie",
-        "projects": "Projekty",
-        "skills": "Umiejętności",
-        "experience": "Doświadczenie"
+        "about": "À propos de moi",
+        "projects": "Projets",
+        "skills": "Compétences",
+        "experience": "Expérience"
       }
     },
     "projects": [
       {
-        "title": "Animal Shelter",
-        "startDate": "2020",
-        "description": "Najbardziej rozbudowana aplikacja nad którą miałam okazję pracować. Poznałam dużo technologii a mój kod by sprawdzany przez super opiekuna. Aplikacja obsługuje wszystkie procesy adopcji i pozwala na przechowywanie wszelkiej dokumentacji związanej z adopcją zwierząt ze schroniska.",
+        "title": "Jaytrain",
+        "startDate": "Application web",
+        "description": "Conception et développement d’une application web et mobile dédiée au suivi sportif, permettant aux utilisateurs de participer à des séances d’entraînement, suivre leur progression physique et nutritionnelle, et interagir via une plateforme sociale.",
+
         "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
-          "images/portfolio/animal-shelter/p2.jpg"
+          "images/portfolio/animal-shelter/p1.webp",
+          "images/portfolio/animal-shelter/p2.webp"
         ],
         "url": "",
         "technologies": [
@@ -35,12 +36,13 @@
         ]
       },
       {
-        "title": "Photography",
-        "startDate": "2018",
-        "description": "Osobisty projekt na przedmiot ze studiów. Byłam odpowiedzilna za testowanie aplikacji, która optymalizuje zdjęcia z pomocą popularnych algorytmów używanych przed edytory grafiki takie jak Pixlr czy Adobe Photoshop. Otrzymałam 5-tkę za projekt :)",
+        "title": "Impérial",
+        "startDate": "Application web",
+        "description": "Conception et développement d’une application web de jeu de loterie en ligne hautement disponible, sécurisée et intuitive, offrant une expérience interactive de participation à des tirages au sort.",
+
         "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
+          "images/portfolio/photography/p1.webp",
+          "images/portfolio/photography/p2.webp"
         ],
         "url": "https://github.com",
         "technologies": [
@@ -55,12 +57,12 @@
         ]
       },
       {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
-        "description": "Jedna z pierwszych aplikacji nad którymi pracowałam na stażu. Musiałam przygotować front-end dla aplikacji, która pokazuje modele 3D znanych budynków. To był także mój pierwszy projekt w frameworku Angular. Dużo się nauczyłam!",
+        "title": "Patient",
+        "startDate": "Application mobile",
+        "description": "Conception et développement d’une application mobile innovante dédiée à la gestion de la santé humaine et animale. Cette application permet aux patients de commander facilement leurs médicaments en ligne, de prendre rendez-vous avec un professionnel de santé selon sa spécialité, et de gérer le suivi de leurs consultations. Elle intègre également un module vétérinaire offrant la possibilité de fixer des rendez-vous pour leurs animaux, garantissant ainsi une expérience complète et centralisée pour le bien-être de toute la famille.",
         "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
+          "images/portfolio/adventure/p1.webp",
+          "images/portfolio/adventure/p2.webp"
         ],
         "url": "https://github.com",
         "technologies": [

@@ -28,8 +28,22 @@ body[data-theme="dark"] {
    }
 
    .project-date {
-      background-color: #918e97;
+      font-size: 16px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+      position: relative;
+      z-index: -500;
+      border-top: 5px solid #696969;
+      border-radius: 0 0 5px 5px;
+      background-color: #696969;
       color: white;
+      
+      /* Centrage vertical */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%; /* ou une hauteur spécifique si nécessaire */
+      min-height: 40px; /* ajustez selon vos besoins */
    }
 
    header {
@@ -99,6 +113,8 @@ body[data-theme="dark"] {
    .modal-inside .modal-content {
       background: #5b5b5b;
       color: white;
+      border-radius: 20px;
+	   
    }
 
    .close-icon {
