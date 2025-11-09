@@ -12,6 +12,10 @@ const Topbar = ({ sharedData }) => {
 
   const navItems = ["About", "portfolio", "Skills", "Contact"]; // adapte selon tes sections
 
+  if (this.props.sharedBasicInfo) {
+    var profilepic = "images/" + this.props.sharedBasicInfo.image;
+  }
+
   return (
     
     <footer>
@@ -19,7 +23,7 @@ const Topbar = ({ sharedData }) => {
 
          <div style={styles.profileContainer}>
           <img
-            src={"images/myProfile.png"}
+            src={profilepic}
             alt="Profile"
             style={styles.profileImage}
           />
