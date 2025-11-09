@@ -23,7 +23,7 @@ class Skills extends Component {
         );
       });
     }
-
+//ddd
     return (
       <section id="skills">
         <div className="col-md-12">
