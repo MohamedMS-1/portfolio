@@ -25,7 +25,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "main -d build --repo https://github.com/MohamedMS-1/portfolio.git --no-history"
+    "deploy": "gh-pages -d build --repo https://github.com/MohamedMS-1/portfolio.git --branch portfolio-deploy --no-history"
   },
   "eslintConfig": {
     "extends": "react-app"
