@@ -96,7 +96,7 @@ class App extends Component {
     return (
       <div>
         <CustomCursor />
-        
+        qq
         <Topbar sharedData={basicInfo} />
         
         <Header sharedData={this.state.sharedData.basic_info} />
