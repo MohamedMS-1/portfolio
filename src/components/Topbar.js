@@ -22,8 +22,9 @@ const Topbar = ({ sharedData }) => {
       <nav style={styles.nav}>
 
          <div style={styles.profileContainer}>
+            
           <img
-            src={profilepic}
+            src="https://mohamedms-1.github.io/portfolio/images/myProfile.png"
             alt="Profile"
             style={styles.profileImage}
           />
