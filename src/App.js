@@ -95,7 +95,9 @@ class App extends Component {
 
     return (
       <div>
-
+        <CustomCursor />
+   
+        <Topbar sharedData={basicInfo} />
         
         <Header sharedData={this.state.sharedData.basic_info} />
         <div className="col-md-12 mx-auto text-center language">
