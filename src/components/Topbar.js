@@ -12,9 +12,7 @@ const Topbar = ({ sharedData }) => {
 
   const navItems = ["About", "portfolio", "Skills", "Contact"]; // adapte selon tes sections
 
-  if (this.props.sharedBasicInfo) {
-    var profilepic = "images/" + this.props.sharedBasicInfo.image;
-  }
+
 
   return (
     
