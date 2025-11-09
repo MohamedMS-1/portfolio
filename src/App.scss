@@ -172,7 +172,9 @@ header h1 {
 
 .polaroid img {
 	display: block;
-	max-width: 200px;
+	max-width: 250px;
+	width: 200px;
+  	margin: 0 auto; /* ✅ centre horizontalement */
 }
 
 .polaroid span {
@@ -190,6 +192,7 @@ header h1 {
 	transition: all .20s linear;
 	z-index: 0;
 	position: relative;
+	width: 70%;
 }
 
 .link-href {

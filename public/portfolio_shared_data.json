@@ -1,7 +1,7 @@
 {
     "basic_info": {
-      "name": "Davina Griss",
-      "titles": [ "Front-end Developer", "Senior Data Engineer", "Dev Team lead", "Mobile App Developer" ],
+      "name": "Mohamed Mselmi",
+      "titles": [ "Full stack Developer", "Front-end Engineer", "Dev Team lead", "Mobile App Developer" ],
       "social": [
         {
           "name": "github",
@@ -14,7 +14,7 @@
           "class": "fab fa-instagram"
         }
       ],
-      "image": "myProfile.jpg"
+      "image": "myProfile.png"
     },
     "skills": {
       "icons": [
