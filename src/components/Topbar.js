@@ -1,5 +1,6 @@
 // Header.jsx
 import React from "react";
+import { useState } from "react";
 
 
 const Topbar = ({ sharedData }) => {
@@ -10,9 +11,9 @@ const Topbar = ({ sharedData }) => {
     }
   };
 
-  const navItems = ["About", "portfolio", "Skills", "Contact"]; // adapte selon tes sections
+  const navItems = ["About", "portfolio", "Skills"]; // adapte selon tes sections
 
-
+ const [hoveredItem, setHoveredItem] = useState(null);
 
   return (
     
@@ -32,10 +33,13 @@ const Topbar = ({ sharedData }) => {
           {navItems.map((item) => (
             <li
               key={item}
-              style={styles.navItem}
+              style={styles.navItem(hoveredItem === item)}
+              onMouseEnter={() => setHoveredItem(item)}
+              onMouseLeave={() => setHoveredItem(null)}
               onClick={() => scrollToSection(item.toLowerCase())}
             >
               {item}
+              <span style={styles.underline(hoveredItem === item)}></span>
             </li>
           ))}
         </ul>
@@ -72,12 +76,7 @@ const styles = {
     margin: 10,
     padding: 0,
   },
-  navItem: {
-    color: "#fff",
-    cursor: "pointer",
-    fontWeight: "500",
-    transition: "color 0.3s",
-  },
+
   profileContainer: {
     display: "flex",
     alignItems: "center",
@@ -88,6 +87,25 @@ const styles = {
     borderRadius: "50%",
     objectFit: "cover",
   },
+
+      navItem: (isHovered) => ({
+      color: "#fff",
+      cursor: "pointer",
+      fontWeight: 500,
+      position: "relative",
+      paddingBottom: "5px",
+      transition: "all 0.3s ease",
+    }),
+    underline: (isHovered) => ({
+      content: '""',
+      position: "absolute",
+      bottom: 0,
+      left: 0,
+      width: isHovered ? "100%" : "0%",
+      height: "2px",
+      backgroundColor: "#fff",
+      transition: "width 0.3s ease",
+    }),
 };
 
 export default Topbar;

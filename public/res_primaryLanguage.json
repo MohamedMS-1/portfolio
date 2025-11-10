@@ -81,37 +81,33 @@
     ],
     "experience": [
       {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - present",
+        "company": "Smartegy",
+        "title": "Full stack Developer",
+        "years": "10.2022 - 10.2025",
         "mainTech": [
-          "Angular 8/9/10"
+          "Angular 8/9/10","Spring boot"
         ],
         "technologies": [
+          "Spring boot",
           "REST API",
           "RxJS",
           "JavaScript",
           "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          ".NET Core",
-          "SignalR",
-          "Angular Material"
+          "Angular"
         ]
       },
       {
-        "company": "Serros Solutions",
-        "title": "Intern",
-        "years": "01.2018 - 09.2019",
+        "company": "Groupe adaming",
+        "title": "Full stack Developer",
+        "years": "01.2019 - 09.2019",
         "mainTech": [
-          "Angular 7/8"
+          "Angular 7","Spring boot"
         ],
         "technologies": [
-          "RxJS",
-          "Django",
-          "PHP",
-          "JavaScript",
-          "DHTMLX Gantt"
+          "Spring boot",
+          "Angular",
+          "docker",
+          "JavaScript"
         ]
       }
     ]
