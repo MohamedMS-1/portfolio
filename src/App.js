@@ -12,14 +12,15 @@ import Topbar from "./components/Topbar";
 
 class App extends Component {
 
-  constructor(props) {
-    super();
-    this.state = {
-      foo: "bar",
-      resumeData: {},
-      sharedData: {},
-    };
-  }
+constructor(props) {
+  super(props); // ✅ props doit être passé à super()
+  this.state = {
+    foo: "bar",
+    resumeData: {},
+    sharedData: {},
+  };
+}
+
 
   applyPickedLanguage(pickedLanguage, oppositeLangIconId) {
     this.swapCurrentlyActiveLanguage(oppositeLangIconId);
@@ -95,7 +96,7 @@ class App extends Component {
 
     return (
       <div>
-        <CustomCursor />
+        
    
         <Topbar sharedData={basicInfo} />
         
