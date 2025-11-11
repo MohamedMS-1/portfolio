@@ -3,7 +3,7 @@ import React from "react";
 import { useState } from "react";
 
 
-const Topbar = ({ sharedData }) => {
+const Topbar = ({ sharedData, resumeBasicInfo  }) => {
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
@@ -11,7 +11,9 @@ const Topbar = ({ sharedData }) => {
     }
   };
 
-  const navItems = ["About", "portfolio", "Skills"]; // adapte selon tes sections
+  const sectionNames = resumeBasicInfo?.section_name || {};
+  const navKeys = ["about", "projects", "skills", "experience"];
+ 
 
  const [hoveredItem, setHoveredItem] = useState(null);
 
@@ -30,16 +32,16 @@ const Topbar = ({ sharedData }) => {
         </div>
 
         <ul style={styles.navList}>
-          {navItems.map((item) => (
+          {navKeys.map((key) => (
             <li
-              key={item}
-              style={styles.navItem(hoveredItem === item)}
-              onMouseEnter={() => setHoveredItem(item)}
+              key={key}
+              style={styles.navItem(hoveredItem === key)}
+              onMouseEnter={() => setHoveredItem(key)}
               onMouseLeave={() => setHoveredItem(null)}
-              onClick={() => scrollToSection(item.toLowerCase())}
+              onClick={() => scrollToSection(key.toLowerCase())}
             >
-              {item}
-              <span style={styles.underline(hoveredItem === item)}></span>
+              {sectionNames[key] || key}
+              <span style={styles.underline(hoveredItem === key)}></span>
             </li>
           ))}
         </ul>

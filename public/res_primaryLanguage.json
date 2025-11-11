@@ -85,7 +85,7 @@
         "title": "Full stack Developer",
         "years": "10.2022 - 10.2025",
         "mainTech": [
-          "Angular 8/9/10","Spring boot"
+          "Angular 11/12/14","Spring boot"
         ],
         "technologies": [
           "Spring boot",
@@ -97,7 +97,7 @@
         ]
       },
       {
-        "company": "Groupe adaming",
+        "company": "Adaming Group",
         "title": "Full stack Developer",
         "years": "01.2019 - 09.2019",
         "mainTech": [

@@ -98,7 +98,12 @@ constructor(props) {
       <div>
         
    
-        <Topbar sharedData={basicInfo} />
+        {this.state.resumeData.basic_info && (
+          <Topbar
+            sharedData={basicInfo}
+            resumeBasicInfo={this.state.resumeData.basic_info}
+          />
+        )}
         
         <Header sharedData={this.state.sharedData.basic_info} />
         <div className="col-md-12 mx-auto text-center language">
