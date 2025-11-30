@@ -15,6 +15,31 @@ class About extends Component {
       var about = this.props.resumeBasicInfo.description;
     }
 
+
+      const [isDownloading, setIsDownloading] = useState(false);
+  const [downloadCount, setDownloadCount] = useState(0);
+
+  const handleDownload = () => {
+    setIsDownloading(true);
+    
+    // Simulation téléchargement
+    setTimeout(() => {
+      // Lien vers l'APK dans le dossier public
+      const link = document.createElement('a');
+      link.href = '/app.apk';
+      link.download = 'mon-application.apk';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      
+      setIsDownloading(false);
+      setDownloadCount(prev => prev + 1);
+      
+      // Analytics personnalisé
+      console.log('Téléchargement APK réussi');
+    }, 1000);
+  };
+
     return (
       <section id="about">
         <div className="col-md-12">
@@ -85,6 +110,23 @@ class About extends Component {
                 </div>
               </div>
             </div>
+
+                  <button 
+                  className={`download-btn ${isDownloading ? 'downloading' : ''}`}
+                  onClick={handleDownload}
+                  disabled={isDownloading}
+                >
+                  {isDownloading ? (
+                    <>
+                      <span className="spinner"></span>
+                      Téléchargement...
+                    </>
+                  ) : (
+                    <>
+                      📲 TÉLÉCHARGER L'APP
+                    </>
+                  )}
+                </button>
           </div>
         </div>
       </section>
