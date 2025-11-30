@@ -3,9 +3,36 @@ import { Icon } from "@iconify/react";
 import angularIcon from "@iconify/icons-logos/angular-icon";
 import reactIcon from "@iconify/icons-logos/react";
 import vueIcon from "@iconify/icons-logos/vue";
-import { useState } from "react";
 
 class About extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isDownloading: false,
+      downloadCount: 0
+    };
+  }
+
+  handleDownload = () => {
+    this.setState({ isDownloading: true });
+    
+    setTimeout(() => {
+      const link = document.createElement('a');
+      link.href = '/app.apk';
+      link.download = 'mon-application.apk';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      
+      this.setState(prevState => ({
+        isDownloading: false,
+        downloadCount: prevState.downloadCount + 1
+      }));
+      
+      console.log('Téléchargement APK réussi');
+    }, 1000);
+  };
+
   render() {
     if (this.props.sharedBasicInfo) {
       var profilepic = "images/" + this.props.sharedBasicInfo.image;
@@ -16,30 +43,7 @@ class About extends Component {
       var about = this.props.resumeBasicInfo.description;
     }
 
-
-      const [isDownloading, setIsDownloading] = useState(false);
-  const [downloadCount, setDownloadCount] = useState(0);
-
-  const handleDownload = () => {
-    setIsDownloading(true);
-    
-    // Simulation téléchargement
-    setTimeout(() => {
-      // Lien vers l'APK dans le dossier public
-      const link = document.createElement('a');
-      link.href = '/app.apk';
-      link.download = 'mon-application.apk';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      
-      setIsDownloading(false);
-      setDownloadCount(prev => prev + 1);
-      
-      // Analytics personnalisé
-      console.log('Téléchargement APK réussi');
-    }, 1000);
-  };
+    const { isDownloading, downloadCount } = this.state;
 
     return (
       <section id="about">
@@ -112,22 +116,36 @@ class About extends Component {
               </div>
             </div>
 
-                  <button 
-                  className={`download-btn ${isDownloading ? 'downloading' : ''}`}
-                  onClick={handleDownload}
-                  disabled={isDownloading}
-                >
-                  {isDownloading ? (
-                    <>
-                      <span className="spinner"></span>
-                      Téléchargement...
-                    </>
-                  ) : (
-                    <>
-                      📲 TÉLÉCHARGER L'APP
-                    </>
-                  )}
-                </button>
+            {/* Bouton de téléchargement */}
+            <div className="col-md-12 mt-4">
+              <button 
+                className={`btn ${isDownloading ? 'btn-warning' : 'btn-success'} btn-lg`}
+                onClick={this.handleDownload}
+                disabled={isDownloading}
+                style={{
+                  padding: "15px 30px",
+                  fontSize: "18px",
+                  borderRadius: "25px"
+                }}
+              >
+                {isDownloading ? (
+                  <>
+                    <span className="spinner-border spinner-border-sm me-2"></span>
+                    Téléchargement...
+                  </>
+                ) : (
+                  <>
+                    📲 TÉLÉCHARGER L'APP
+                  </>
+                )}
+              </button>
+              
+              {downloadCount > 0 && (
+                <p className="mt-2 text-muted">
+                  ✅ {downloadCount} téléchargement(s)
+                </p>
+              )}
+            </div>
           </div>
         </div>
       </section>
